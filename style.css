@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin: 16px;
+  text-align: center;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid mistyrose;
+}
+h1 {
+  color: #333;
+}
+
+p {
+  font-size: 1.2rem;
+  text-align: start;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 24px 48px;
+  gap: 24px;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 0.5fr 1fr;
+}
+
+.title {
+  color: gray;
+}
+
+@media (max-width: 480px) {
+  .container {
+    display: block;
+  }
+}
